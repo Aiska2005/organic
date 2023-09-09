@@ -1,0 +1,50 @@
+.block_search {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.inputSearch {
+  width: 200px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  padding-left: 10px;
+  border: none;
+  position: relative;
+}
+.iconSearch {
+  border-radius: 50%;
+  background-color: #7eb693;
+  color: aliceblue;
+  width: 36px;
+  height: 36px;
+  margin-top: 2px;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  top: 0px;
+  right: 125px;
+}
+
+.buttonCart {
+  height: 40px;
+  width: 100px;
+  opacity: 1.3;
+  border-radius: 30px;
+  padding-left: 10px;
+  border: none;
+  padding-left: 20px;
+}
+.iconCart {
+  border-radius: 50%;
+  background-color: #274c5b;
+  color: aliceblue;
+  width: 36px;
+  height: 36px;
+  margin-top: 2px;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  right: 60px;
+  top: 0;
+}

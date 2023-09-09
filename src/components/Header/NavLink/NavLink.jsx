@@ -4,13 +4,13 @@ import "./NavLink.css";
 const NavLink = () => {
   return (
     <ul>
-      <Link to="/">
+      <Link className="link" to="/">
         <li>home</li>
       </Link>
-      <Link to="/shop">
+      <Link className="link" to="/shop">
         <li>shop</li>
       </Link>
-      <Link to="/news">
+      <Link className="link" to="/news">
         <li>news</li>
       </Link>
     </ul>

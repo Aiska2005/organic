@@ -7,9 +7,9 @@ import Search from "./Search/Search";
 const Header = () => {
   return (
     <div className="header">
-      <div>
+      <div className="blockLogo">
         <img className="logo" src={logo} alt="" />
-        <h1>Organick</h1>
+        <h2>Organick</h2>
       </div>
       <NavLink />
       <Search />

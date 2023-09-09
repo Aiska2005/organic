@@ -1,3 +1,9 @@
 ul {
   display: flex;
+  gap: 40px;
+}
+.link {
+  color: #274c5b;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
 }

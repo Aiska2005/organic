@@ -1,6 +1,20 @@
 .logo {
-  width: 36px;
+  width: 26px;
+  display: flex;
 }
-h1 {
-  font-size: 36px;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.blockLogo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+h2 {
+  color: #274c5b;
+  font-family: "Roboto", sans-serif;
 }
