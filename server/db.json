@@ -1,0 +1,89 @@
+{
+    "product":[
+        {
+            "id":1,
+            "title":"Calabrese Broccoli",
+            "variants":"Vegetable",
+            "price": 20,
+            "image": "/public/assets/jsonImg/Photo.png"
+        },
+        {
+            "id":2,
+            "title":"Fresh Banana Fruites",
+            "variants":"Fresh",
+            "price": 14,
+            "image": "/public/assets/jsonImg/banana.png"
+        },
+        {
+            "id":3,
+            "title":"White Nuts",
+            "variants":"Millets",
+            "price": 15,
+            "image": "/public/assets/jsonImg/nuts.png"
+        },
+        {
+            "id":4,
+            "title":"Vegan Red Tomato",
+            "variants":"Vegetable",
+            "price": 17,
+            "image": "/public/assets/jsonImg/tomato.png"
+        },
+        {
+            "id":5,
+            "title":"Mung Bean",
+            "variants":"Health",
+            "price": 11,
+            "image": "/public/assets/jsonImg/bean.png"
+        },
+        {
+            "id":6,
+            "title":"Brown Hazelnut",
+            "variants":"Nuts",
+            "price": 12,
+            "image": "/public/assets/jsonImg/hazelnut.png"
+        },
+        {
+            "id":7,
+            "title":"Eggs",
+            "variants":"Fresh",
+            "price": 17,
+            "image": "/public/assets/jsonImg/eggs.png"
+        },
+        {
+            "id":8,
+            "title":"Zelco Suji Elaichi Rusk",
+            "variants":"Fresh",
+            "price": 15,
+            "image": "/public/assets/jsonImg/bread.png"
+        },
+        {
+            "id":9,
+            "title":"Mung Bean",
+            "variants":"Health",
+            "price": 11,
+            "image": "/public/assets/jsonImg/MungBean.png"
+        },
+        {
+            "id":10,
+            "title":"White Hazelnut",
+            "variants":"Nuts",
+            "price": 12,
+            "image": "/public/assets/jsonImg/writeHazelunt.png"
+        },
+        {
+            "id":11,
+            "title":"Fresh Corn",
+            "variants":"Fresh",
+            "price": 17,
+            "image": "/public/assets/jsonImg/corn.png"
+        },
+        {
+            "id":12,
+            "title":"Organic Almonds",
+            "variants":"Fresh",
+            "price": 15,
+            "image": "/public/assets/jsonImg/almonds.png"
+        }
+
+    ]
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { BsSearch } from "react-icons/bs";
+import { BsSearch } from 'react-icons/bs';
 import "./Search.css";
 
 const Search = () => {
