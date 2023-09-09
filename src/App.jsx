@@ -7,7 +7,7 @@ import News from "./pages/News/News";
 
 const App = () => {
   return (
-    <>
+    <div className="container">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -15,7 +15,7 @@ const App = () => {
           <Route path="news" element={<News />} />
         </Route>
       </Routes>
-    </>
+    </div>
   );
 };
 
