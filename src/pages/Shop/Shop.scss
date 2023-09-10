@@ -1,0 +1,22 @@
+.shop{
+    width: 100%;
+    background-image: url('/public/assets/shop/bgshop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center center;
+
+    .shop-content{
+        text-align: center;
+        padding-top: 11%;
+        
+        h1{
+            color: var(--dark-color);
+            font-family: Roboto;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal; 
+        }
+    }
+}
