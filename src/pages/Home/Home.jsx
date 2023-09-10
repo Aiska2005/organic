@@ -5,10 +5,6 @@ const Home = () => {
   return (
     <div>
       <div className="homeImg"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
     </div>
   );
 };

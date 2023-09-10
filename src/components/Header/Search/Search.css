@@ -4,47 +4,63 @@
   align-items: center;
 }
 .inputSearch {
-  width: 200px;
-  height: 40px;
+  width: 376px;
+  height: 50px;
   background-color: #f0f0f0;
   border-radius: 30px;
   padding-left: 10px;
   border: none;
   position: relative;
+
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .iconSearch {
   border-radius: 50%;
   background-color: #7eb693;
   color: aliceblue;
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
+  font-size: 24px;
   margin-top: 2px;
   text-align: center;
   padding-top: 10px;
   position: absolute;
   top: 0px;
-  right: 125px;
+  right: 183px;
 }
 
 .buttonCart {
-  height: 40px;
-  width: 100px;
+  height: 50px;
+  width: 159px;
   opacity: 1.3;
   border-radius: 30px;
   padding-left: 10px;
   border: none;
   padding-left: 20px;
+
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .iconCart {
   border-radius: 50%;
   background-color: #274c5b;
   color: aliceblue;
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
   margin-top: 2px;
+  font-size: 24px;
   text-align: center;
   padding-top: 10px;
   position: absolute;
-  right: 60px;
+  right: 110px;
   top: 0;
 }
