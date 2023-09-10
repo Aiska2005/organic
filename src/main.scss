@@ -5,7 +5,26 @@
   list-style: none;
   text-decoration: none;
 }
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #fff;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+:root{
+  --color:#FFF;
+  --bg-color: #F9F8F8;
+  --dark-color:  #274C5B;
+  --grean-color: #7EB693;
+  --yellow-color: #EFD372;
+  --gray-color: #D4D4D4;
+  --blue-color: #EFF6F1;
+  --dark-black-color: #525C60;
+
+
 }
