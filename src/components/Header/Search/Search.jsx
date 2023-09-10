@@ -1,7 +1,7 @@
 import React from "react";
+import "./Search.css";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import "./Search.css";
 
 const Search = () => {
   return (
