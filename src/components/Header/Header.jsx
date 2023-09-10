@@ -1,7 +1,7 @@
 import React from "react";
 import NavLink from "./NavLink/NavLink";
 import "./Header.css";
-import logo from "../../../public/header/Logo.png";
+import logo from "../../../public/assets/header/Logo.png";
 import Search from "./Search/Search";
 
 const Header = () => {

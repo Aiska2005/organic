@@ -7,7 +7,7 @@ import News from "./pages/News/News";
 
 const App = () => {
   return (
-    <div className="container">
+    <div>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
