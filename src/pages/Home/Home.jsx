@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <div className="homeImg">
-        <div className="center_contant_home">
+        <div className="center_contant_home container">
           <h3>100% Natural Food</h3>
           <h1>
             Choose the best
