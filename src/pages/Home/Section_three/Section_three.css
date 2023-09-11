@@ -1,0 +1,17 @@
+.section_three {
+  padding-top: 100px;
+}
+.bgImg {
+  background-image: url(/public/assets/home/section_three/bg_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 593px;
+  height: 690.126px;
+  border-radius: 45px;
+}
+.bgWhite {
+  width: 489px;
+  height: 523px;
+  background-color: aliceblue;
+  border-radius: 15%;
+}

@@ -2,6 +2,8 @@ import React from "react";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import "./Home.css";
 import Section_one from "./Section_one/Section_one";
+import Section_second from "./Section_second/Section_second";
+import Section_three from "./Section_three/Section_three";
 
 const Home = () => {
   return (
@@ -23,6 +25,8 @@ const Home = () => {
         </div>
       </div>
       <Section_one />
+      {/* <Section_second /> */}
+      <Section_three />
     </div>
   );
 };
