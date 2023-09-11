@@ -1,5 +1,7 @@
 .section_three {
   padding-top: 100px;
+  display: flex;
+  position: relative;
 }
 .bgImg {
   background-image: url(/public/assets/home/section_three/bg_img.jpg);
@@ -14,4 +16,7 @@
   height: 523px;
   background-color: aliceblue;
   border-radius: 15%;
+  position: absolute;
+  right: 150px;
+  bottom: 40px;
 }

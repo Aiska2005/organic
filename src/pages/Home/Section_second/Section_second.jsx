@@ -3,10 +3,12 @@ import Card from "../../../components/Ui/Card/Card";
 // css
 import "./Section_second.css";
 
-const Section_second = () => {
+const Section_second = ({ item }) => {
   return (
-    <div>
-      <Card />
+    <div className="container blockAxios">
+      {item.map((el) => (
+        <Card key={el.id} {...el} />
+      ))}
     </div>
   );
 };
