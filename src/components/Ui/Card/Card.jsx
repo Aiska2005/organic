@@ -1,10 +1,10 @@
 import React from "react";
 import "./Card.scss";
 
-const Card = ({Variants, image, title, price}) => {
+const Card = ({variants, image, title, price}) => {
   return (
     <div className="card">
-      <button className="card-variants">{Variants}</button>
+      <button className="card-variants">{variants}</button>
       <div className="card-img">
         <img src={image} alt="" />
       </div>

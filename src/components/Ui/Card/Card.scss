@@ -4,6 +4,7 @@
     border-radius: 30px;
     background: var(--bg-color);
     padding: 17px 30px;
+    margin: 15px 0 ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,11 +14,17 @@
     .card-img{
         position: relative;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         img{
-            width: 300px;
+            width: 210px;
             position: absolute;
-            top: -145px;
-            left: -40px;
+            top: -140px;
+            left: 0px;
+            bottom: 0;
             filter: drop-shadow(-15px 20px 15px #c5bfbf);
            
         }
