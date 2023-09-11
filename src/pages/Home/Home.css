@@ -26,7 +26,21 @@ h1 {
   font-weight: 800;
   line-height: normal;
 }
-button {
+.button_home {
+  width: 190px;
+  height: 60px;
+  border: none;
   border-radius: 16px;
   background: #efd372;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

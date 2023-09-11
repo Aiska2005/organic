@@ -1,0 +1,59 @@
+.contantSection {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.photo {
+  background-image: url(/public/assets/home/section_one/Photo.jpg);
+  background-size: cover;
+  width: 682.244px;
+  height: 367px;
+  border-radius: 30px;
+}
+.photo2 {
+  background-image: url(/public/assets/home/section_one/Photo2.jpg);
+  background-size: cover;
+  width: 682.244px;
+  height: 367px;
+  border-radius: 30px;
+}
+
+span {
+  color: #fff;
+  font-family: Yellowtail;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h4 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.textCenter {
+  padding-top: 122px;
+  padding-left: 55px;
+}
+.offerText {
+  color: #7eb693;
+  font-family: Yellowtail;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+h3 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}

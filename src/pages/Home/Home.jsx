@@ -1,6 +1,7 @@
 import React from "react";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import "./Home.css";
+import Section_one from "./Section_one/Section_one";
 
 const Home = () => {
   return (
@@ -15,12 +16,13 @@ const Home = () => {
             <br />
             of life
           </h1>
-          <button>
+          <button className="button_home">
             Explore Now
             <BsFillArrowRightCircleFill />
           </button>
         </div>
       </div>
+      <Section_one />
     </div>
   );
 };
