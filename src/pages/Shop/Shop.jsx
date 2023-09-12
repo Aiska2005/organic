@@ -3,16 +3,7 @@ import "./Shop.scss";
 import Card from "../../components/Ui/Card/Card";
 import axios from "axios";
 
-const Shop = () => {
-  const [product, setProduct] = useState([]);
-
-  console.log(product);
-
-  useEffect(() => {
-    axios.get("http://localhost:3001/product").then((res) => {
-      return setProduct(res.data);
-    });
-  }, []);
+const Shop = ({product}) => {
 
   return (
     <>
