@@ -65,10 +65,10 @@ h3 {
   margin-right: auto;
   margin-top: 20vh;
   margin-bottom: 50px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 10px 40px 2px;
-  background: rgba(0, 0, 0, 0.4) #000;
+  box-shadow: 0 0px 15px 0.1px;
+  background: rgba(207, 189, 189, 0.4) #9e9a9a;
   transform-origin: center;
   transition: all 0.5s;
   animation-duration: 3s;
@@ -111,9 +111,10 @@ h3 {
   margin-right: auto;
   margin-top: 20vh;
   margin-bottom: 50px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 10px 40px 2px;
+  box-shadow: 0 0px 15px 0.1px;
+
   background: rgba(0, 0, 0, 0.4) #000;
   transform-origin: center;
   transition: all 0.5s;
