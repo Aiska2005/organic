@@ -6,6 +6,8 @@ import "./Section_one.css";
 const Section_one = () => {
   return (
     <div className="contantSection container">
+      {/* <Skeleton /> */}
+
       <div className="photo">
         <div className="textCenter">
           <span className="natiral">Natural!!</span>
