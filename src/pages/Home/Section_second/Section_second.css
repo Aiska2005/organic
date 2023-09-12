@@ -3,3 +3,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.textCategories {
+  color: #7eb693;
+  font-family: Yellowtail;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+h5 {
+  color: #274c5b;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
