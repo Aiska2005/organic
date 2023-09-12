@@ -1,5 +1,5 @@
 .contantSection {
-  padding-top: 150px;
+  /* padding-top: 150px; */
   padding-bottom: 150px;
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@
   border-radius: 30px;
 }
 
-span {
+.natiral {
   color: #fff;
   font-family: Yellowtail;
   font-size: 36px;
@@ -56,4 +56,96 @@ h3 {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+.photo {
+  width: 682px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px 2px;
+  background: rgba(0, 0, 0, 0.4) #000;
+  transform-origin: center;
+  transition: all 0.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px), rotateX(35deg), rotateY(4deg), rotateZ(-30deg);
+  z-index: 1;
+}
+
+.photo:hover {
+  margin-top: 18vh;
+  transform: perspective(1000px), rotateX(0deg), rotateY(0deg), rotateZ(0deg);
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+}
+
+@keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  ,
+  50% {
+    margin-top: 18vh;
+  }
+  ,
+  100% {
+    margin-top: 20vh;
+  }
+}
+
+.photo2 {
+  width: 682px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px 2px;
+  background: rgba(0, 0, 0, 0.4) #000;
+  transform-origin: center;
+  transition: all 0.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px), rotateX(35deg), rotateY(4deg), rotateZ(-30deg);
+  z-index: 1;
+}
+
+.photo2:hover {
+  margin-top: 18vh;
+  transform: perspective(1000px), rotateX(0deg), rotateY(0deg), rotateZ(0deg);
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+}
+
+@keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  ,
+  50% {
+    margin-top: 18vh;
+  }
+  ,
+  100% {
+    margin-top: 20vh;
+  }
 }

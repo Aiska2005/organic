@@ -8,7 +8,7 @@ const Section_one = () => {
     <div className="contantSection container">
       <div className="photo">
         <div className="textCenter">
-          <span>Natural!!</span>
+          <span className="natiral">Natural!!</span>
           <h4>
             Get Garden
             <br />

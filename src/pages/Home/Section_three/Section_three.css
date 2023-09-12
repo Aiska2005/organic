@@ -12,11 +12,48 @@
   border-radius: 45px;
 }
 .bgWhite {
-  width: 489px;
-  height: 523px;
+  width: 509px;
+  height: 593px;
   background-color: aliceblue;
   border-radius: 15%;
   position: absolute;
   right: 150px;
   bottom: 40px;
+}
+.width {
+  padding-top: 40px;
+  padding-left: 60px;
+  /* width: 500px; */
+}
+.eco {
+  color: #7eb693;
+  font-family: Yellowtail;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text_h4 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+p {
+  color: #525c60;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%;
+}
+span {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
