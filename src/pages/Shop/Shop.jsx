@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Shop.scss";
-import Card from "../../components/Ui/Card/Card";
+import Card from "../../components/Card/Card";
 import axios from "axios";
 
-const Shop = ({product}) => {
-
+const Shop = ({ product }) => {
   return (
     <>
       <section className="shop">

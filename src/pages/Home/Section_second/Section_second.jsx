@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Card from "../../../components/Ui/Card/Card";
+import Card from "../../../components/Card/Card";
 // css
 import "./Section_second.css";
-import Skeleton from "../../../components/Skeleton/Skeleton";
+// import Skeleton from "../../../components/Card/Card";
 
 const Section_second = ({ item }) => {
-  const [isLoading, setLoading] = useState(false);
+  // const [isLoading, setLoading] = useState(false);
   return (
     <div className="container">
       <div style={{ textAlign: "center" }}>
