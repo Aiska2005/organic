@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import "./Card.scss";
 
-const Card = ({ variants, image, title, price, setOpenModal }) => {
+const Card = ({ items, setOpenModal, onAddModal }) => {
   return (
     <>
       <div
         onClick={() => {
           console.log("open modal ");
           setOpenModal(true);
+          onAddModal(items)
+
         }}
         className="card"
       >
-        <button className="card-variants">{variants}</button>
+        <button className="card-variants">{items.variants}</button>
         <div className="card-img">
-          <img src={image} alt="" />
+          <img src={items.image} alt="" />
         </div>
         <div className="card-block-info">
           <div className="card-info">
-            <h2>{title}</h2>
+            <h2>{items.title}</h2>
           </div>
           <div className="card-price">
-            <p>${price}.00</p>
+            <p>${items.price}.00</p>
             <span>
               <img src="/public/assets/Star.png" alt="" />
             </span>

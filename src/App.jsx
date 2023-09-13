@@ -12,6 +12,7 @@ const App = () => {
   const [item, setItem] = useState([]);
   const [cartOpened, setCartOpened] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [modalItem, setModalItem] = useState([])
 
   useEffect(() => {
     async function fetchData () {
@@ -28,6 +29,12 @@ const App = () => {
     }
     fetchData()
       },[])
+
+      const addModalItem = (obj) => {
+        setModalItem((prev) => [...prev, obj])
+        
+      }
+      console.log(modalItem);
   return (
     <div>
       <Routes>
@@ -40,7 +47,7 @@ const App = () => {
           <Route index element={<Home isLoading={isLoading} item={item} />} />
           <Route
             path="shop"
-            element={<Shop isLoading={isLoading} product={item} />}
+            element={<Shop onAddModal={addModalItem} isLoading={isLoading} product={item} />}
           />
           <Route path="news" element={<News />} />
         </Route>

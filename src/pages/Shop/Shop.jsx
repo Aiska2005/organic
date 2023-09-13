@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./Shop.scss";
 import Card from "../../components/Card/Card";
 import Skeleton from "../../components/Skeleton/Skeleton";
+import Modal from '../../components/Modal/Modal'
 
-const Shop = ({ product, isLoading }) => {
+const Shop = ({ product, isLoading,onAddModal }) => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <section className="shop">
@@ -15,6 +17,7 @@ const Shop = ({ product, isLoading }) => {
       </section>
       <div className="container">
         <div className="shop-card">
+        {openModal && <Modal />}
           {isLoading ? (
             <div>
               <Skeleton />
@@ -29,7 +32,7 @@ const Shop = ({ product, isLoading }) => {
           ) : (
             <>
               {product.map((item) => (
-                <Card key={item.id} {...item} />
+                <Card onAddModal={onAddModal} setOpenModal={setOpenModal} key={item.id} items={item} />
               ))}
             </>
           )}
