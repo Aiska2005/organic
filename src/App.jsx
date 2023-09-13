@@ -14,14 +14,20 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios
+    async function fetchData () {
+      await axios
       .get("http://localhost:3001/product")
       .then((res) => {
         return setItem(res.data);
-      }).finally(setTimeout(() => {
-        setIsLoading(false)
-      },1000))
-  }, []);
+      })
+      .finally(
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1000)
+      )
+    }
+    fetchData()
+      },[])
   return (
     <div>
       <Routes>
@@ -32,7 +38,10 @@ const App = () => {
           }
         >
           <Route index element={<Home isLoading={isLoading} item={item} />} />
-          <Route path="shop" element={<Shop isLoading={isLoading} product={item} />} />
+          <Route
+            path="shop"
+            element={<Shop isLoading={isLoading} product={item} />}
+          />
           <Route path="news" element={<News />} />
         </Route>
       </Routes>

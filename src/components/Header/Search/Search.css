@@ -35,6 +35,7 @@
 }
 
 .buttonCart {
+  cursor: pointer;
   height: 50px;
   width: 159px;
   opacity: 1.3;

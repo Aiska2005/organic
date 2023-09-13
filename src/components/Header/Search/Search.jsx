@@ -3,7 +3,7 @@ import "./Search.css";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-const Search = ({onClickOpen}) => {
+const Search = ({ onClickOpen }) => {
   return (
     <div className="block_search">
       <div>
@@ -12,7 +12,7 @@ const Search = ({onClickOpen}) => {
           <BsSearch />
         </div>
       </div>
-      <div onClick={onClickOpen} >
+      <div className="cu-p" onClick={onClickOpen}>
         <div className="iconCart">
           <AiOutlineShoppingCart />
         </div>

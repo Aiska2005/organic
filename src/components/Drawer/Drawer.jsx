@@ -5,11 +5,11 @@ const Drawer = ({onClose}) => {
   return (
     <div className="overlay">
       <div className="drawer">
-        <h2 className="d-flex justify-between align-center">
-          Корзина <img  onClick={onClose} src="/public/assets/btn-remove.svg" alt="" />
+        <h2 className="d-flex justify-between align-center mb-30">
+          Корзина <img className="cu-p"  onClick={onClose} src="/public/assets/btn-remove.svg" alt="" />
         </h2>
-        <div className="items">
-          <div className="cartItem d-flex align-center ">
+        {/* <div className="items">
+          <div className="cartItem d-flex align-center mb-20 ">
             <div className="cartItemImg"></div>
             <div>
                 <p>title</p>
@@ -17,7 +17,7 @@ const Drawer = ({onClose}) => {
             </div>
             <img src="/public/assets/btn-remove.svg" alt="" />
           </div>
-        </div>
+        </div> */}
 
         <div className="pusto1 d-flex justify-center">
             <div className="pusto">
