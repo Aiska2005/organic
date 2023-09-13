@@ -5,7 +5,7 @@ import "./Section_second.css";
 import Modal from "../../../components/Modal/Modal";
 import Skeleton from "../../../components/Skeleton/Skeleton";
 
-const Section_second = ({ item , isLoading}) => {
+const Section_second = ({ items , isLoading , onAddModal }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -30,8 +30,8 @@ const Section_second = ({ item , isLoading}) => {
             </div>
           ) : (
             <>
-              {item.map((el) => (
-                <Card key={el.id} {...el} setOpenModal={setOpenModal} />
+              {items.map((el) => (
+                <Card onAddModal={onAddModal} key={el.id} items ={el} setOpenModal={setOpenModal} />
               ))}
             </>
           )}

@@ -34,7 +34,7 @@ const App = () => {
         setModalItem((prev) => [...prev, obj])
         
       }
-      console.log(modalItem);
+      
   return (
     <div>
       <Routes>
@@ -44,7 +44,7 @@ const App = () => {
             <Layout setCartOpened={setCartOpened} cartOpened={cartOpened} />
           }
         >
-          <Route index element={<Home isLoading={isLoading} item={item} />} />
+          <Route index element={<Home onAddModal={addModalItem} isLoading={isLoading} item={item} />} />
           <Route
             path="shop"
             element={<Shop onAddModal={addModalItem} isLoading={isLoading} product={item} />}
