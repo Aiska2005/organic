@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Shop.scss";
 import Card from "../../components/Card/Card";
-import axios from "axios";
+import Skeleton from "../../components/Skeleton/Skeleton";
 
-const Shop = ({ product }) => {
+const Shop = ({ product, isLoading }) => {
   return (
     <>
       <section className="shop">
@@ -15,9 +15,24 @@ const Shop = ({ product }) => {
       </section>
       <div className="container">
         <div className="shop-card">
-          {product.map((item) => (
-            <Card key={item.id} {...item} />
-          ))}
+          {isLoading ? (
+            <div>
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+            </div>
+          ) : (
+            <>
+              {product.map((item) => (
+                <Card key={item.id} {...item} />
+              ))}
+            </>
+          )}
         </div>
       </div>
     </>

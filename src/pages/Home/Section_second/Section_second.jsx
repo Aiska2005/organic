@@ -3,8 +3,9 @@ import Card from "../../../components/Card/Card";
 // css
 import "./Section_second.css";
 import Modal from "../../../components/Modal/Modal";
+import Skeleton from "../../../components/Skeleton/Skeleton";
 
-const Section_second = ({ item }) => {
+const Section_second = ({ item , isLoading}) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -16,9 +17,24 @@ const Section_second = ({ item }) => {
       {openModal && <Modal />}
       {
         <div className="blockAxios">
-          {item.map((el) => (
-            <Card key={el.id} {...el} setOpenModal={setOpenModal} />
-          ))}
+          {isLoading ? (
+            <div>
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+              <Skeleton />
+            </div>
+          ) : (
+            <>
+              {item.map((el) => (
+                <Card key={el.id} {...el} setOpenModal={setOpenModal} />
+              ))}
+            </>
+          )}
         </div>
       }
     </div>

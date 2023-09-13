@@ -5,7 +5,7 @@ import Section_one from "./Section_one/Section_one";
 import Section_second from "./Section_second/Section_second";
 import Section_three from "./Section_three/Section_three";
 
-const Home = ({ item }) => {
+const Home = ({ item , isLoading }) => {
   return (
     <div>
       <div className="homeImg">
@@ -25,7 +25,7 @@ const Home = ({ item }) => {
         </div>
       </div>
       <Section_one />
-      <Section_second item={item} />
+      <Section_second isLoading={isLoading} item={item} />
       <Section_three />
     </div>
   );
