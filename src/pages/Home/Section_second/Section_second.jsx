@@ -9,7 +9,6 @@ const Section_second = ({ item }) => {
   return (
     <div className="container">
       <div style={{ textAlign: "center" }}>
-        {" "}
         <span className="textCategories">Categories</span>
         <h5>Our Products</h5>
       </div>

@@ -3,7 +3,7 @@ import NavLink from "./NavLink/NavLink";
 import "./Header.css";
 import Search from "./Search/Search";
 
-const Header = () => {
+const Header = ({onClickOpen}) => {
   return (
     <header>
       <div className="container">
@@ -13,7 +13,7 @@ const Header = () => {
             <h2>Organick</h2>
           </div>
           <NavLink />
-          <Search />
+          <Search onClickOpen ={onClickOpen} />
         </div>
       </div>
     </header>

@@ -8,6 +8,7 @@ import axios from "axios";
 
 const App = () => {
   const [item, setItem] = useState([]);
+  const [cartOpened, setCartOpened] =useState(false)
   console.log("item: ", item);
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout setCartOpened={setCartOpened} cartOpened={cartOpened} />}>
           <Route index element={<Home item={item} />} />
           <Route path="shop" element={<Shop product={item} />} />
           <Route path="news" element={<News />} />
