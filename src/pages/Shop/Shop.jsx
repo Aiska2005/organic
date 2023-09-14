@@ -17,7 +17,7 @@ const Shop = ({ product, isLoading,onAddModal }) => {
       </section>
       <div className="container">
         <div className="shop-card">
-        {openModal && <Modal />}
+        {openModal && <Modal setOpenModal={setOpenModal} />}
           {isLoading ? (
             <div>
               <Skeleton />

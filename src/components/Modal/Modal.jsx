@@ -1,16 +1,30 @@
 import React from "react";
-// css
-import "./Modal.css";
+import './Modal.scss'
 
-const Modal = () => {
+const Modal = ({setOpenModal}) => {
   console.log("modal opened");
   return (
     <div className="modal">
-      <img
-        src="https://img5.lalafo.com/i/posters/api_webp/7a/c4/8e/325818f1b27eb6250de625b06e.webp"
-        alt=""
-      />
-      <div className="modal_content">oufvrksdkb</div>
+      <div className="modal-content">
+        <div onClick={() =>{
+          setOpenModal(false)
+        }} className="modal-remove"><img src="/public/assets/btn-remove.svg" alt="" /></div>
+        <div className="modal-img">
+          <img src="/public/assets/jsonImg/banana.png" alt="" />
+        </div>
+        <div className="modal-title">
+          <h1>Health Pistachios</h1>
+          <span><img src="/public/assets/Star.png" alt="" /></span>
+          <div className="price">$13.00</div>
+          <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+
+          <div className="modal-addtocart">
+            <h3>Quantity :</h3>
+            <div className="modal-count">1</div>
+            <button className="addToCart">Add To Cart <span><img src="/public/assets/right.svg" alt="" /></span></button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

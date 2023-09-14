@@ -14,7 +14,7 @@ const Section_second = ({ items , isLoading , onAddModal }) => {
         <span className="textCategories">Categories</span>
         <h5>Our Products</h5>
       </div>
-      {openModal && <Modal />}
+      {openModal && <Modal setOpenModal={setOpenModal} />}
       {
         <div className="blockAxios">
           {isLoading ? (
