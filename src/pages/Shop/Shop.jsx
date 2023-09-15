@@ -4,7 +4,7 @@ import Card from "../../components/Card/Card";
 import Skeleton from "../../components/Skeleton/Skeleton";
 import Modal from '../../components/Modal/Modal'
 
-const Shop = ({ product, isLoading,onAddModal }) => {
+const Shop = ({ product, isLoading,onAddModal, modalProduct,onAddCart }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
@@ -17,7 +17,11 @@ const Shop = ({ product, isLoading,onAddModal }) => {
       </section>
       <div className="container">
         <div className="shop-card">
-        {openModal && <Modal setOpenModal={setOpenModal} />}
+        {openModal && <>{
+          modalProduct.map(item => (
+            <Modal onAddCart={onAddCart}  key={item} product={item} setOpenModal={setOpenModal} />
+          ))
+        }</>}
           {isLoading ? (
             <div>
               <Skeleton />

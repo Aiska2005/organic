@@ -5,7 +5,7 @@ import "./Section_second.css";
 import Modal from "../../../components/Modal/Modal";
 import Skeleton from "../../../components/Skeleton/Skeleton";
 
-const Section_second = ({ items , isLoading , onAddModal }) => {
+const Section_second = ({ items , isLoading , onAddModal , modalProduct, onAddCart }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -14,7 +14,11 @@ const Section_second = ({ items , isLoading , onAddModal }) => {
         <span className="textCategories">Categories</span>
         <h5>Our Products</h5>
       </div>
-      {openModal && <Modal setOpenModal={setOpenModal} />}
+      {openModal && <>{
+        modalProduct.map(item => (
+          <Modal key={item.id} onAddCart={onAddCart} product={item} setOpenModal={setOpenModal} />
+        ))
+      }</>}
       {
         <div className="blockAxios">
           {isLoading ? (

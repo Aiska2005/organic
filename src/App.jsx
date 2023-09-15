@@ -12,42 +12,63 @@ const App = () => {
   const [item, setItem] = useState([]);
   const [cartOpened, setCartOpened] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [modalItem, setModalItem] = useState([])
+  const [modalItem, setModalItem] = useState([]);
+  const [cartProduct, setCartProduct] = useState([])
 
   useEffect(() => {
-    async function fetchData () {
+    async function fetchData() {
       await axios
-      .get("http://localhost:3001/product")
-      .then((res) => {
-        return setItem(res.data);
-      })
-      .finally(
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 1000)
-      )
+        .get("http://localhost:3001/product")
+        .then((res) => {
+          return setItem(res.data);
+        })
+        .finally(
+          setTimeout(() => {
+            setIsLoading(false);
+          }, 1000)
+        );
     }
-    fetchData()
-      },[])
+    fetchData();
+  }, []);
 
-      const addModalItem = (obj) => {
-        setModalItem((prev) => [...prev, obj])
-        
-      }
-      
+  const addModalItem = (obj) => {
+    setModalItem((prev) => [...prev, obj]);
+  };
+  const addCartItem = (obj) => {
+    setCartProduct((prev) => [...prev, obj])
+  }
   return (
     <div>
       <Routes>
         <Route
           path="/"
           element={
-            <Layout setCartOpened={setCartOpened} cartOpened={cartOpened} />
+            <Layout cartProduct={cartProduct} setCartOpened={setCartOpened} cartOpened={cartOpened} />
           }
         >
-          <Route index element={<Home onAddModal={addModalItem} isLoading={isLoading} item={item} />} />
+          <Route
+            index
+            element={
+              <Home
+                onAddCart={addCartItem}
+                modalProduct={modalItem}
+                onAddModal={addModalItem}
+                isLoading={isLoading}
+                item={item}
+              />
+            }
+          />
           <Route
             path="shop"
-            element={<Shop onAddModal={addModalItem} isLoading={isLoading} product={item} />}
+            element={
+              <Shop
+              onAddCart={addCartItem}
+                modalProduct={modalItem}
+                onAddModal={addModalItem}
+                isLoading={isLoading}
+                product={item}
+              />
+            }
           />
           <Route path="news" element={<News />} />
         </Route>
