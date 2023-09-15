@@ -4,7 +4,7 @@ import Card from "../../components/Card/Card";
 import Skeleton from "../../components/Skeleton/Skeleton";
 import Modal from '../../components/Modal/Modal'
 
-const Shop = ({ product, isLoading,onAddModal, modalProduct,onAddCart }) => {
+const Shop = ({ product, isLoading,onAddModal, modalProduct,onAddCart, searchValue }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
@@ -35,7 +35,7 @@ const Shop = ({ product, isLoading,onAddModal, modalProduct,onAddCart }) => {
             </div>
           ) : (
             <>
-              {product.map((item) => (
+              {product.filter(item => item.title.toLowerCase().includes(searchValue.toLowerCase())).map((item) => (
                 <Card onAddModal={onAddModal} setOpenModal={setOpenModal} key={item.id} items={item} />
               ))}
             </>

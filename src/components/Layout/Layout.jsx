@@ -4,11 +4,11 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Drawer from "../Drawer/Drawer";
 
-const Layout = ({ cartOpened, setCartOpened, cartProduct, onDelete }) => {
+const Layout = ({ cartOpened, setCartOpened, cartProduct, onDelete, onSearch, searchValue }) => {
   return (
     <div>
       {cartOpened ? <Drawer onDelete={onDelete} cartProduct={cartProduct}  onClose = {() => setCartOpened(false)} /> : null}
-      <Header onClickOpen={() => setCartOpened(true)} />
+      <Header searchValue={searchValue} onSearch={onSearch} onClickOpen={() => setCartOpened(true)} />
 
       <Outlet />
 

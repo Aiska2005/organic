@@ -5,8 +5,6 @@ import Home from "./pages/Home/Home";
 import Shop from "./pages/Shop/Shop";
 import News from "./pages/News/News";
 import axios from "axios";
-import Skeleton from "./components/Skeleton/Skeleton";
-import Card from "./components/Card/Card";
 
 const App = () => {
   const [item, setItem] = useState([]);
@@ -14,7 +12,9 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [modalItem, setModalItem] = useState([]);
   const [cartProduct, setCartProduct] = useState([]);
+  const [searchValue, setSearchValue] = useState("");
 
+  console.log(searchValue);
   useEffect(() => {
     async function fetchData() {
       await axios
@@ -38,7 +38,12 @@ const App = () => {
     setCartProduct((prev) => [...prev, obj]);
   };
   const removeDelete = (id) => {
-    setCartProduct((prev) => prev.filter((item) => Number(item.id)!== Number(id)));
+    setCartProduct((prev) =>
+      prev.filter((item) => Number(item.id) !== Number(id))
+    );
+  };
+  const onChangeInput = (event) => {
+    setSearchValue(event.target.value);
   };
   return (
     <div>
@@ -47,6 +52,8 @@ const App = () => {
           path="/"
           element={
             <Layout
+              searchValue={searchValue}
+              onSearch={onChangeInput}
               onDelete={removeDelete}
               cartProduct={cartProduct}
               setCartOpened={setCartOpened}
@@ -58,6 +65,7 @@ const App = () => {
             index
             element={
               <Home
+                searchValue={searchValue}
                 onAddCart={addCartItem}
                 modalProduct={modalItem}
                 onAddModal={addModalItem}
@@ -70,6 +78,7 @@ const App = () => {
             path="shop"
             element={
               <Shop
+                searchValue={searchValue}
                 onAddCart={addCartItem}
                 modalProduct={modalItem}
                 onAddModal={addModalItem}

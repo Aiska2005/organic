@@ -5,7 +5,7 @@ import "./Section_second.css";
 import Modal from "../../../components/Modal/Modal";
 import Skeleton from "../../../components/Skeleton/Skeleton";
 
-const Section_second = ({ items , isLoading , onAddModal , modalProduct, onAddCart }) => {
+const Section_second = ({ items , isLoading , onAddModal , modalProduct, onAddCart,searchValue }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -34,7 +34,7 @@ const Section_second = ({ items , isLoading , onAddModal , modalProduct, onAddCa
             </div>
           ) : (
             <>
-              {items.map((el) => (
+              {items.filter(item => item.title.toLowerCase().includes(searchValue.toLowerCase())).map((el) => (
                 <Card onAddModal={onAddModal} key={el.id} items ={el} setOpenModal={setOpenModal} />
               ))}
             </>

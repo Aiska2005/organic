@@ -5,7 +5,7 @@ import Section_one from "./Section_one/Section_one";
 import Section_second from "./Section_second/Section_second";
 import Section_three from "./Section_three/Section_three";
 
-const Home = ({ item , isLoading , onAddModal,modalProduct,onAddCart }) => {
+const Home = ({ item , isLoading , onAddModal,modalProduct,onAddCart, searchValue }) => {
   return (
     <div>
       <div className="homeImg">
@@ -25,7 +25,7 @@ const Home = ({ item , isLoading , onAddModal,modalProduct,onAddCart }) => {
         </div>
       </div>
       <Section_one />
-      <Section_second onAddCart={onAddCart} modalProduct={modalProduct} onAddModal={onAddModal} isLoading={isLoading} items={item} />
+      <Section_second searchValue={searchValue} onAddCart={onAddCart} modalProduct={modalProduct} onAddModal={onAddModal} isLoading={isLoading} items={item} />
       <Section_three />
     </div>
   );

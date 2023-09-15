@@ -3,11 +3,11 @@ import "./Search.css";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
-const Search = ({ onClickOpen }) => {
+const Search = ({ onClickOpen,onSearch, searchValue }) => {
   return (
     <div className="block_search">
       <div>
-        <input className="inputSearch" type="search" placeholder="search" />
+        <input value={searchValue} onChange={onSearch} value={searchValue} className="inputSearch" type="search" placeholder="search" />
         <div className="iconSearch">
           <BsSearch />
         </div>

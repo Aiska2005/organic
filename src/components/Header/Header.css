@@ -1,5 +1,10 @@
 header {
   padding: 25px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: var(--color);
 }
 .logo {
   width: 26px;
