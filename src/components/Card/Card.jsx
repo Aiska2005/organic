@@ -6,7 +6,6 @@ const Card = ({ items, setOpenModal, onAddModal }) => {
     <>
       <div
         onClick={() => {
-          console.log("open modal ");
           setOpenModal(true);
           onAddModal(items)
 

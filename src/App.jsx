@@ -13,7 +13,7 @@ const App = () => {
   const [cartOpened, setCartOpened] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [modalItem, setModalItem] = useState([]);
-  const [cartProduct, setCartProduct] = useState([])
+  const [cartProduct, setCartProduct] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -35,15 +35,23 @@ const App = () => {
     setModalItem((prev) => [...prev, obj]);
   };
   const addCartItem = (obj) => {
-    setCartProduct((prev) => [...prev, obj])
-  }
+    setCartProduct((prev) => [...prev, obj]);
+  };
+  const removeDelete = (id) => {
+    setCartProduct((prev) => prev.filter((item) => Number(item.id)!== Number(id)));
+  };
   return (
     <div>
       <Routes>
         <Route
           path="/"
           element={
-            <Layout cartProduct={cartProduct} setCartOpened={setCartOpened} cartOpened={cartOpened} />
+            <Layout
+              onDelete={removeDelete}
+              cartProduct={cartProduct}
+              setCartOpened={setCartOpened}
+              cartOpened={cartOpened}
+            />
           }
         >
           <Route
@@ -62,7 +70,7 @@ const App = () => {
             path="shop"
             element={
               <Shop
-              onAddCart={addCartItem}
+                onAddCart={addCartItem}
                 modalProduct={modalItem}
                 onAddModal={addModalItem}
                 isLoading={isLoading}

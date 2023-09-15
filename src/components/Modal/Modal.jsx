@@ -2,7 +2,7 @@ import React from "react";
 import './Modal.scss'
 
 const Modal = ({setOpenModal,product, onAddCart}) => {
-  console.log("modal opened");
+
   return (
     <div className="modal">
       <div className="modal-content">
